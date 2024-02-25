@@ -1,0 +1,18 @@
+// breadcrumb 是<transition-group name> 的name属性值
+// enter处于 激活 状态 —— 即元素处于进入状态时
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+
+// 进入动画的起始状态 和 ...
+.breadcrumb-enter-from,
+.breadcrumb-leave-active {
+  opacity: 0;
+  // 旋转、缩放、平移 —— 沿着x轴移动20px
+  transform: translateX(20px);
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
